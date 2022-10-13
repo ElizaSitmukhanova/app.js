@@ -10,11 +10,10 @@ const MyPosts = () => {
                 <button> remove </button>
             </div>
             <div className={s.posts}>
-              <Post/>
-              <Post/>
-              <Post/>
-              <Post/>
+              <Post message = "Hello, my name is Eliza.And you?"/>
+              <Post message = "Hi, i am Pen.Nice to meet you! Where are you from?"/>
             </div>
-        </div>);
+        </div>
+        )
 }
 export default MyPosts;
