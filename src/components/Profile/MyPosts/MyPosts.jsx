@@ -10,8 +10,8 @@ const MyPosts = () => {
                 <button> remove </button>
             </div>
             <div className={s.posts}>
-              <Post message = "Hello, my name is Eliza.And you?"/>
-              <Post message = "Hi, i am Pen.Nice to meet you! Where are you from?"/>
+              <Post message = "Hello, my name is Eliza.And you?" likesCount = "0"/>
+              <Post message = "Hi, i am Pen.Nice to meet you! Where are you from?" likesCount = "25" />
             </div>
         </div>
         )
