@@ -1,4 +1,5 @@
 import s from './Navbar.module.css';
+import React from 'react';
 
 const Navbar = () => {
     return <nav className={s.nav}>

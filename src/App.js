@@ -5,19 +5,26 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from "react-router-dom";
+import { Routes } from 'react-router-dom/dist';
 
 const App = (props) => {
     return (
-        <BrowserRouter>
+       // <BrowserRouter>
             <div className='app-wrapper'>
-                <Header/>
-                <Navbar/>
+                <Header />
+                <Navbar />
                 <div class='app-wrapper-content'>
-                    <Route path='/dialogs' component={Dialogs}/> {/*/dialogs/spam/blabla*/}
-                    <Route path='/profile' component={Profile}/>
+                {/*     <Routes>
+                        <Route path='/dialogs' component={Dialogs} /> 
+                      {/*   <Route path='/profile' component={Profile} />
+
+                    </Routes> */}
+                    <Profile/>
+                    <Dialogs/>
                 </div>
-            </div>
-        </BrowserRouter>)
+            </div>)
+       // </BrowserRouter >)
+
 }
 
 export default App;
