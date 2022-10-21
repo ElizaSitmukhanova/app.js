@@ -9,14 +9,14 @@ const Navbar = () => {
         <div className={`${s.item} ${s.active}`}>
             <a href="/dialogs">Massages</a>
         </div>
-        <div className={s.item}>
-            <a>News</a>
+        <div className={`${s.item} ${s.active}`}>
+        <a href="/news">News</a>
         </div>
-        <div className={s.item}>
-            <a>Music</a>
+        <div className={`${s.item} ${s.active}`}>
+        <a href="/Music">Music</a>
         </div>
-        <div className={s.item}>
-            <a>Settings</a>
+        <div className={`${s.item} ${s.active}`}>
+        <a href="/Settings">Settings</a>
         </div>
     </nav>
 }
