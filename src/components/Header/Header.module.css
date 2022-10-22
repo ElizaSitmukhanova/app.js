@@ -1,6 +1,6 @@
 .header{
    grid-area: h;
-   background-color: #E6E6FA;
+   background-color: white;
    border-bottom: 2px solid rgba(147, 112, 219, 1);
 }
 .logo{
