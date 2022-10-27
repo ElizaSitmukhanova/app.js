@@ -10,10 +10,10 @@ const Dialogs = (props) => {
 
 
     let DialogElement =
-        props.dialogsData.map(d => <DialogItem name={d.name} id={d.id} />)
+        props.localstate.dialogsData.map(d => <DialogItem name={d.name} id={d.id} />)
 
     let MessagesElement =
-        props.messagesData.map(m => <Message message={m.message} id={m.id} />)
+        props.localstate.messagesData.map(m => <Message message={m.message} id={m.id} />)
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
