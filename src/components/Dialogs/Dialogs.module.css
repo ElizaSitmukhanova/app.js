@@ -1,16 +1,40 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
-
+    padding: 15px;
 }
 
- 
-.dialogsItems .active {
-    color: gold;
+
+.dialogsItems .dialog a {
+    text-decoration: none;
+
 }
 
 
 
 .messages {
-    padding: 10px;
+    padding: 20px;
+    color: rgb(173, 117, 222);
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(188, 143, 143, 0.25);
+   
+    
+}
+
+ 
+
+
+.image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+
+.name {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 5px;
 }
