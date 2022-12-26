@@ -3,6 +3,8 @@ import { addPostActionCreator } from '../../../Redux/profile-reducer';
 import { updateNewPostTextActionCreator } from '../../../Redux/profile-reducer';
 import MyPosts from './MyPosts';
 
+
+
 const MyPostsContainer = (props) => {
     let state = props.store.getState();
 
@@ -16,7 +18,7 @@ const MyPostsContainer = (props) => {
     }
 
     return (<MyPosts updateNewPostText={onPostChange} addPost={addPost} 
-                    posts= {state.profilePage.posts} 
+                    postData= {state.profilePage.postData} 
                     newPostText={state.profilePage.newPostText} />)
         }
 
