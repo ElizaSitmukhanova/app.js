@@ -1,14 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import s from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem'
 import Message from './Message/Message';
-import { updateNewMessageBodyCreator } from '../../Redux/dialogs-reducer';
-import { sendMessageCreator } from '../../Redux/dialogs-reducer';
 
 const Dialogs = (props) => {
     
-    let state = props.store.getState().dialogsPage;
+    let state = props.dialogsPage;
 
     let DialogElement =
         state.dialogsData.map(d => <DialogItem image={d.image} name={d.name} id={d.id} />)
@@ -17,11 +14,11 @@ const Dialogs = (props) => {
     let newMessageBody = state.newMessageBody;
 
     let onSendMessageClick = () => {
-        props.store.dispatch(sendMessageCreator())
+        props.sendMessage();
     };
     let onNewMessageChange = (e) => {
         let body = e.target.value;
-        props.store.dispatch(updateNewMessageBodyCreator(body))
+        props.updateNewMessageBody(body);
     };
 
         return (
